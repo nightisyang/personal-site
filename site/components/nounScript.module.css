@@ -34,28 +34,3 @@
     transform: translate3d(0, -100%, 0);
   }
 }
-
-.rock {
-  position: relative;
-  /* left: 58px; */
-  animation-name: rock;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-}
-
-/* @keyframes rock {
-  0% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-  50% {
-    opacity: 1;
-
-    transform: translateX(3rem);
-  }
-  100% {
-    opacity: 1;
-
-    transform: translateX(5rem);
-  }
-} */
