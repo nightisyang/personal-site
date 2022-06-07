@@ -1,6 +1,7 @@
 import styles from "./nounScript.module.css";
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import { RockSlider } from "./RockSlider";
 
 let counter = 0;
 
@@ -54,7 +55,7 @@ export default function NounScript() {
     "job",
   ];
 
-  const rotate = keyframes`
+  const slide = keyframes`
   0% {
   transform: translateX(${startingPx});
   }
@@ -68,11 +69,6 @@ export default function NounScript() {
 
   }`;
 
-  const Rotate = styled.span`
-    position: relative;
-    animation: ${rotate} 2s linear infinite;
-  `;
-
   const nounListSorted = nounList.sort((a, b) => a.length - b.length);
   nounListSorted.push("young");
 
@@ -82,12 +78,17 @@ export default function NounScript() {
       if (counter === nounList.length) {
         counter = 0;
       }
+
+      // useState to update new noun
       setNoun(nounListSorted[counter]);
 
+      // get width to noun to adjust sliding .rock text
       let nounWidth =
         Math.floor(
           getTextWidth(nounListSorted[counter], "bold 32px BlinkMacSystemFont")
         ) + "px";
+
+      // get width of prvious noun to adjust sliding .rock text
 
       let startingPxOfPreviousNoun;
 
@@ -103,12 +104,13 @@ export default function NounScript() {
         startingPxOfPreviousNoun = "92px";
       }
 
+      // useState to update with of new noun(ending point) and of prvious noun(starting point)
       setStartingPx(startingPxOfPreviousNoun);
       setEndingPx(nounWidth);
 
-      setRockStyle({
-        transform: `translateX(${nounWidth})`,
-      });
+      //   setRockStyle({
+      //     transform: `translateX(${nounWidth})`,
+      //   });
 
       counter++;
     }, 2000);
@@ -126,7 +128,7 @@ export default function NounScript() {
       {/* <span className={styles.rock} style={rockStyle}>
         .rocks
       </span> */}
-      <Rotate>.rocks</Rotate>
+      <RockSlider slide={slide}>.rocks</RockSlider>
     </h2>
   );
 }
