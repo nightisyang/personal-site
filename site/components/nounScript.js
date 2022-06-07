@@ -21,7 +21,7 @@ let startingPx;
 let endingPx;
 
 export default function NounScript() {
-  const [noun, setNoun] = useState("");
+  const [noun, setNoun] = useState("young");
   const [rockStyle, setRockStyle] = useState({
     transform: `translateX(92px)`,
   });
