@@ -12,6 +12,19 @@
   align-items: center;
 }
 
+.bgWrap {
+  /* display: flex; */
+  /* align-items: center; */
+  /* position: relative; */
+  /* height: 0vh; */
+  /* width: auto; */
+  /* overflow: hidden; */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  z-index: -1;
+  margin-top: 2rem;
+}
+
 .footer {
   display: flex;
   flex: 1;

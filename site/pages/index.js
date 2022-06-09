@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import NounScript from "../components/nounScript";
 import Link from "next/link";
+import background from "../public/china_rainbow_mountain.jpeg";
 
 export default function Home() {
   return (
@@ -17,6 +18,18 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a style={{ color: "brown" }}>this.rocking site!</a>
         </h1>
+
+        <div className={styles.bgWrap}>
+          <Image
+            src={background}
+            alt="Picture of rainbow mountain in  China"
+            // background-sizes="cover"
+            layout="intrinsic"
+            // objectFit="cover"
+            // quality={100}
+            style={{ zIndex: -1 }}
+          />
+        </div>
 
         <NounScript />
 
