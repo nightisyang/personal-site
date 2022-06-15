@@ -1,0 +1,11 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "site",
+      "path": "[[workspace]]/site"
+    }
+  ],
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.framework.id": "next"
+}
