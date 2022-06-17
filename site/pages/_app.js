@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/burger.css";
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
