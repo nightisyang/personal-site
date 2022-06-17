@@ -14,11 +14,11 @@ Writing has never been my forte, I often struggle to put words and sentences tog
 
 While I am aware that there are still many things to learn, I am also proud of what I've been able to achieve so far. Learning to code has reminded me once again that improvement or change is always incremental and accumulative, being able to breakdown a problem and solve sub-issues incrementally has the only way I have been able to progress.
 
-![Code to generate a complete deck of 52 cards](../public/blog/img/first_code.png)
+![Code to generate a complete deck of 52 cards](/blog/img/first_code.png)
 
 It did take an hour to bust out my first usable piece of code, and even that took several iterations of trial and error, yet it was an exciting moment when it worked. It was a proud moment for me, though I was alone in the room lol. The following weeks was a flurry of coding, troubleshooting and hair pulling sessions when things didn't work out, even so I knew that I was making progress. ~3000 lines of codes later <a href="https://nightisyang.github.io/basic-poker">basic-poker</a> was born, a fully functional game of poker without exception - you have to be all four (default number) players. Although I have played less than 10 games of poker in my life all of which was before the creation of this project, I do see the appeal in the game and there are plans to flesh this out further, so stay tuned!
 
-![Familiar?](../public/blog/img/welcome-to-nextjs.png)
+![Familiar?](/blog/img/welcome-to-nextjs.png)
 
 As I said, I knew that it is a long journey and I had an idea early on to make a record of my progress in this new field and what better way than creating my own site? Though this has also led to the reminder that I lack the creativity to create a visually pleasing site, which is why the landing page is just a copy of the default next.js site with some minor changes. The little css animation above took considerable amount of effort and time (sigh) but it's the incremental change (!!) that will add some personality to the site. I reckon that it'll take considerable time before it's a unique site without the familarity of the default landing page, but for now I'm content.
 

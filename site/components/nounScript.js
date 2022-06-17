@@ -57,15 +57,15 @@ export default function NounScript() {
 
   const slide = keyframes`
   0% {
-  transform: translateX(${startingPx});
+    -webkit-transform: translateX(${startingPx});
   }
 
   25% {
-      transform: translateX(${endingPx});
+    -webkit-transform: translateX(${endingPx});
     }
 
   100% {
-  transform: translateX(${endingPx});
+    -webkit-transform: translateX(${endingPx});
 
   }`;
 
