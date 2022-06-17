@@ -113,7 +113,7 @@ export default function NounScript() {
       //   });
 
       counter++;
-    }, 2000);
+    }, 3000);
 
     // clear out the interval using the id when unmounting the component
     return () => clearInterval(myInterval);

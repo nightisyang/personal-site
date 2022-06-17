@@ -15,9 +15,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        {/* <h1 className={styles.title}>
           Welcome to <a style={{ color: "brown" }}>this.rocking site!</a>
-        </h1>
+        </h1> */}
+
+        <NounScript />
 
         <div className={styles.bgWrap}>
           <Image
@@ -31,16 +33,14 @@ export default function Home() {
           />
         </div>
 
-        <NounScript />
-
         {/* <h2 className={styles.csstext}>
           this <a className={styles.cssyoung}>`${noun}`</a>.rocks
         </h2> */}
 
-        <p className={styles.description}>
+        {/* <p className={styles.description}>
           A jouney of a tousand miles of code starts with
           <code className={styles.code}>this</code>
-        </p>
+        </p> */}
 
         <div className={styles.grid}>
           <div className={styles.card}>
@@ -83,14 +83,10 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
           Powered by{" "}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/next.png" alt="Vercel Logo" width={45} height={20} />
           </span>
         </a>
       </footer>

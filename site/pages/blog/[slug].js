@@ -1,11 +1,14 @@
 import Layout from "../../components/layout";
 import Sidebar from "../../components/sidebar";
+import styles from "../../styles/BlogPost.module.css";
+import NounScript from "../../components/nounScript";
 
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 import { marked } from "marked";
 import Link from "next/link";
+import ContentPage from "../../components/contentPage";
 
 export default function PostPage(props) {
   return (
@@ -54,7 +57,7 @@ PostPage.getLayout = function getLayout(page) {
   return (
     <Layout>
       <Sidebar />
-      {page}
+      <ContentPage content={page} />
     </Layout>
   );
 };

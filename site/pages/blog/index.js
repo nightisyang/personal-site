@@ -1,6 +1,9 @@
 import Layout from "../../components/layout";
 import Sidebar from "../../components/sidebar";
 import Posts from "../../components/posts";
+import Header from "../../components/header";
+import ContentPage from "../../components/contentPage";
+
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
@@ -8,7 +11,7 @@ import matter from "gray-matter";
 export default function Blog(props) {
   return (
     <div>
-      <h1>blog</h1>
+      <h1>Blog</h1>
 
       <div className="posts">
         {props.posts.map((post, index) => {
@@ -18,15 +21,6 @@ export default function Blog(props) {
     </div>
   );
 }
-
-Blog.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      <Sidebar />
-      {page}
-    </Layout>
-  );
-};
 
 export async function getStaticProps() {
   // Get files from the posts dir
@@ -56,3 +50,12 @@ export async function getStaticProps() {
     },
   };
 }
+
+Blog.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      <Sidebar />
+      <ContentPage content={page} />
+    </Layout>
+  );
+};

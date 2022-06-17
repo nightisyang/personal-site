@@ -5,12 +5,14 @@ import styles from "../styles/Blog.module.css";
 export default function Posts(props) {
   return (
     <div className={styles.card}>
-      <img src={props.post.frontmatter.cover_image} width={500}></img>
+      <img src={props.post.frontmatter.cover_image} width={400}></img>
+      <div className={`styles.post-date`}>
+        Posted on {props.post.frontmatter.date}
+      </div>
       <h3>{props.post.frontmatter.title}</h3>
-      <div>{props.post.frontmatter.date}</div>
 
       <Link href={`blog/${props.post.slug}`}>
-        <a className="btn">Read More</a>
+        <a className={styles.btn}>Read More</a>
       </Link>
     </div>
   );
