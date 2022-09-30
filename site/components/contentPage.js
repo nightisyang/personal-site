@@ -15,7 +15,7 @@ export default function ContentPage(props) {
       <div className={styles.item2}>
         <div className={styles.content}>{props.content}</div>
       </div>
-      <div className={styles.item3}>Last Updated 17-06-2022</div>
+      <div className={styles.item3}>Last Updated 30-09-2022</div>
     </div>
   );
 }

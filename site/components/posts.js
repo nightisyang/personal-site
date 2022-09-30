@@ -5,7 +5,7 @@ import styles from "../styles/Blog.module.css";
 export default function Posts(props) {
   return (
     <div className={styles.card}>
-      <img src={props.post.frontmatter.cover_image} width={400}></img>
+      <img src={props.post.frontmatter.cover_image} width={300}></img>
       <div className={`styles.post-date`}>
         Posted on {props.post.frontmatter.date}
       </div>

@@ -13,7 +13,15 @@ export default function Blog(props) {
     <div>
       <h1>Blog</h1>
 
-      <div className="posts">
+      <div
+        className="posts"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          // justifyItems: "center",
+        }}
+      >
         {props.posts.map((post, index) => {
           return <Posts post={post}></Posts>;
         })}
