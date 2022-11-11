@@ -4,7 +4,12 @@ import Header from "../components/header";
 import ContentPage from "../components/contentPage";
 
 export default function Projects() {
-  return <h1>Projects</h1>;
+  return (
+    <>
+      <h1>Projects</h1>
+      <div className="container"></div>
+    </>
+  );
 }
 
 Projects.getLayout = function getLayout(page) {

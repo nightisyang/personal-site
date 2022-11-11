@@ -17,6 +17,21 @@ export default function Contact() {
         excepteur amet cillum occaecat nisi est consectetur irure. */}
         </h1>
       </div>
+      <div className={styles.card}>
+        ✉️ Email:
+        <p>contact@thisyoung.rocks</p>
+        <h1>
+          {/* Labore velit tempor deserunt enim nostrud et labore mollit. Commodo
+        mollit magna incididunt non cillum sit eu reprehenderit. Minim fugiat
+        proident commodo pariatur nostrud. Ipsum aliqua duis enim nisi. Non aute
+        excepteur amet cillum occaecat nisi est consectetur irure. */}
+        </h1>
+      </div>
+      <div className={styles.card}>
+        ✉️ Email:
+        <p>contact@thisyoung.rocks</p>
+        <h1></h1>
+      </div>
     </div>
   );
 }
