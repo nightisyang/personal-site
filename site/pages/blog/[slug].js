@@ -55,11 +55,9 @@ export async function getStaticProps({ params: { slug } }) {
 
 PostPage.getLayout = function getLayout(page) {
   return (
-    <>
+    <Layout>
       <Sidebar />
-      <Layout>
-        <ContentPage content={page} />
-      </Layout>
-    </>
+      <ContentPage content={page} />
+    </Layout>
   );
 };
