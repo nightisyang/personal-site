@@ -1,4 +1,4 @@
-import styles from "./nounScript.module.css";
+import styles from "../styles/NounScript.module.css";
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { RockSlider } from "./RockSlider";
@@ -125,9 +125,6 @@ export default function NounScript() {
       <span id="text" className={styles.cssyoung}>
         {noun}
       </span>
-      {/* <span className={styles.rock} style={rockStyle}>
-        .rocks
-      </span> */}
       <RockSlider slide={slide}>.rocks</RockSlider>
     </h2>
   );
