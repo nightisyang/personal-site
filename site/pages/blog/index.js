@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar";
 import Posts from "../../components/posts";
 import Header from "../../components/header";
 import ContentPage from "../../components/contentPage";
+import styles from "../../styles/Blog.module.css";
 
 import path from "path";
 import fs from "fs";
@@ -12,14 +13,7 @@ export default function Blog(props) {
   return (
     <div>
       <h1>Blog</h1>
-      <div
-        className="posts"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          width: "100%",
-        }}
-      >
+      <div className={styles.cardContainer}>
         {props.posts.map((post, index) => {
           return <Posts post={post}></Posts>;
         })}
