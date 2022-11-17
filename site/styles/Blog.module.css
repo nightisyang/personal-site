@@ -1,9 +1,9 @@
 .cardContainer {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0 5%;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .card {
@@ -41,4 +41,13 @@
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+}
+
+@media (max-width: 850px) {
+  .cardContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
