@@ -16,7 +16,12 @@ export default function PostPage(props) {
       <Link href="/blog">
         <button>Go Back</button>
       </Link>
-      <div dangerouslySetInnerHTML={{ __html: marked(props.content) }}></div>
+      <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+        <div
+          style={{ maxWidth: "800px" }}
+          dangerouslySetInnerHTML={{ __html: marked(props.content) }}
+        ></div>
+      </div>
     </div>
   );
 }
