@@ -24,11 +24,7 @@ export default function Contact() {
       <div className={styles.container}>
         <div className={styles.card}>
           <div>
-            <Image
-              src="/../public/GitHub-Mark-120px-plus.png"
-              width={80}
-              height={80}
-            />
+            <Image src="/GitHub-Mark-120px-plus.png" width={80} height={80} />
             <div className={styles.textCenter}>
               <p>
                 <a href="https://github.com/nightisyang" target="_blank">
@@ -39,7 +35,7 @@ export default function Contact() {
           </div>
         </div>
         <div className={styles.card}>
-          <Image src="/../public/email-100px.png" width={80} height={80} />
+          <Image src="/email-100px.png" width={80} height={80} />
           <div className={styles.textCenter}>
             <div className={styles.tooltip}>
               <p
