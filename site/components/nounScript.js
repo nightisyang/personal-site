@@ -22,11 +22,11 @@ let endingPx;
 
 export default function NounScript() {
   const [noun, setNoun] = useState("young");
-  // const [rockStyle, setRockStyle] = useState({
-  //   transform: `translateX(92px)`,
-  // });
+  const [rockStyle, setRockStyle] = useState({
+    transform: `translateX(92px)`,
+  });
   const [startingPx, setStartingPx] = useState("100px");
-  const [endingPx, setEndingPx] = useState("72px");
+  const [endingPx, setEndingPx] = useState("92px");
 
   const nounList = [
     "rock",
@@ -85,7 +85,7 @@ export default function NounScript() {
       // get width to noun to adjust sliding .rock text
       let nounWidth =
         Math.floor(
-          getTextWidth(nounListSorted[counter], "bold 24px BlinkMacSystemFont")
+          getTextWidth(nounListSorted[counter], "bold 32px BlinkMacSystemFont")
         ) + "px";
 
       // get width of prvious noun to adjust sliding .rock text
@@ -97,11 +97,11 @@ export default function NounScript() {
           Math.floor(
             getTextWidth(
               nounListSorted[counter - 1],
-              "bold 24px BlinkMacSystemFont"
+              "bold 32px BlinkMacSystemFont"
             )
           ) + "px";
       } else {
-        startingPxOfPreviousNoun = "72px";
+        startingPxOfPreviousNoun = "92px";
       }
 
       // useState to update with of new noun(ending point) and of prvious noun(starting point)
@@ -121,7 +121,7 @@ export default function NounScript() {
 
   return (
     <h2 className={styles.csstext}>
-      <span className={styles.item1}>this</span>
+      <span className={styles.item1}>this</span>{" "}
       <span id="text" className={styles.cssyoung}>
         {noun}
       </span>

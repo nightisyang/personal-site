@@ -2,12 +2,11 @@
   display: grid;
   grid-template-columns: 0px auto auto;
   margin-top: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
-
 .item1 {
   position: absolute;
-  transform: translateX(-46px);
+  transform: translateX(-58px);
 }
 
 .cssyoung {
@@ -35,9 +34,3 @@
     transform: translate3d(0, -100%, 0);
   }
 }
-/* 
-@media (max-width: 600px) {
-  .csstext {
-    font-size: 1.5rem;
-  }
-} */
