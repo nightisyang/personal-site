@@ -34,7 +34,7 @@ const HamburgerMenu = () => {
   );
 
   return (
-    <div className="relative p-2">
+    <div>
       <Menu isOpen={closeMenu} onOpen={toggleMenu} onClose={toggleMenu}>
         <Links />
       </Menu>

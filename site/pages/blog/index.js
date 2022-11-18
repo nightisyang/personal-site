@@ -13,10 +13,12 @@ export default function Blog(props) {
   return (
     <div>
       <h1>Blog</h1>
-      <div className={styles.cardContainer}>
-        {props.posts.map((post, index) => {
-          return <Posts post={post}></Posts>;
-        })}
+      <div className={styles.container}>
+        <div className={styles.cardContainer}>
+          {props.posts.map((post, index) => {
+            return <Posts post={post}></Posts>;
+          })}
+        </div>
       </div>
     </div>
   );

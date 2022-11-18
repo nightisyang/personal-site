@@ -1,15 +1,17 @@
 import Link from "next/link";
 import styles from "../styles/ContentPage.module.css";
 import NounScript from "../components/nounScript";
+import Animation from "./Animation";
 
 export default function ContentPage(props) {
   return (
     <div className={styles.gridContainer}>
       <div className={styles.header}>
         <div className={styles.flexContainer}>
-          <div className={styles.item1NounScript}>
-            <NounScript />
-          </div>
+          {/* <div className={styles.item1NounScript}> */}
+          <Animation />
+          {/* <NounScript /> */}
+          {/* </div> */}
         </div>
       </div>
       <div className={styles.body}>

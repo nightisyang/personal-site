@@ -1,0 +1,29 @@
+.csstext {
+  display: grid;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.item1 {
+  position: absolute;
+  transform: translateX(-58px);
+}
+
+.cssyoung {
+  position: relative;
+  /* left: 58px; */
+  animation-name: young;
+  animation-duration: 3s;
+}
+
+@keyframes young {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}

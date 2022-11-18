@@ -2,6 +2,8 @@ import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
 import ContentPage from "../components/contentPage";
 import NounScript from "../components/nounScript";
+import Animation from "../components/Animation";
+
 import Link from "next/link";
 import styles from "../styles/Banner.module.css";
 import { useEffect, useState } from "react";
@@ -35,7 +37,7 @@ export default function Banner() {
               alignItems: "center",
             }}
           >
-            <NounScript />
+            <Animation />
           </div>
         </div>
         <p className={bannerPStyle}>Sup nerds</p>

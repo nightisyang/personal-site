@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  /* background-color: pink; */
+  width: 100%;
+  justify-content: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 45rem;
+  /* background-color: orange; */
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.card {
+  /* background-color: beige; */
+  width: 22rem;
+  height: 15rem;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.125s ease, opacity 0.125s ease-in-out;
+  will-change: transform;
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+  transition: transform 0.5s;
+  /* opacity: 0.5; */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repoContainer {
+  position: absolute;
+  left: 1rem;
+}
+
+.tooltiptext {
+  position: absolute;
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  z-index: 1;
+  bottom: 150%;
+  margin-left: -47px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.repoContainer:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.projectTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 50px;
+}
+
+.footerLogo {
+  width: 70px;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: purple; */
+    justify-content: center;
+    gap: 1rem;
+  }
+}
