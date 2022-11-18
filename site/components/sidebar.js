@@ -27,9 +27,6 @@ const HamburgerMenu = () => {
       <Link href="/contact">
         <a onClick={() => toggleMenu()}>Contact Me</a>
       </Link>
-      {/* <Link href="/banner">
-        <a onClick={() => toggleMenu()}>Banner</a>
-      </Link> */}
     </>
   );
 

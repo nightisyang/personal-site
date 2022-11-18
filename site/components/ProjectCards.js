@@ -17,6 +17,9 @@ export default function ProjectCards(props) {
   };
 
   const generateLogo = function (logoType) {
+    if (!logo[logoType]) {
+      return;
+    }
     let path = "";
     if (logo[logoType]) {
       path = logo[logoType];
@@ -43,7 +46,7 @@ export default function ProjectCards(props) {
         </div>
         <div className={styles.projectTitle}>{props.name}</div>
       </div>
-      <p style={{ textAlign: "center" }}>{props.description}</p>
+      <div style={{ textAlign: "center" }}>{props.description}</div>
       <div className={styles.footerContainer}>
         {props.logo.map((val) => {
           return generateLogo(val);

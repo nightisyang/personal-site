@@ -19,7 +19,7 @@ export default function Banner() {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("initiate animation");
+    // console.log("initiate animation");
     setBannerLogoStyle(styles.bannerLogo);
     setBannerH2Style(styles.bannerH2);
     setBannerPStyle(styles.bannerP);
