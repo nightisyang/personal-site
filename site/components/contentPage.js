@@ -8,10 +8,7 @@ export default function ContentPage(props) {
     <div className={styles.gridContainer}>
       <div className={styles.header}>
         <div className={styles.flexContainer}>
-          {/* <div className={styles.item1NounScript}> */}
           <Animation />
-          {/* <NounScript /> */}
-          {/* </div> */}
         </div>
       </div>
       <div className={styles.body}>
