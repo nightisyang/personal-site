@@ -6,7 +6,7 @@ export default function Posts(props) {
   return (
     <div className={styles.card}>
       <div className={styles.imgContainer}>
-        <img src={props.post.frontmatter.cover_image} width={300}></img>
+        <img src={props.post.frontmatter.cover_image} width={210}></img>
       </div>
       <div className="detailsContainer">
         <div className={`styles.post-date`}>
