@@ -10,7 +10,7 @@ import styles from "../styles/Projects.module.css";
 export default function Projects() {
   return (
     <>
-      <h1>Projects</h1>
+      <h1 className={styles.pageTitle}>Projects</h1>
       <div className={styles.container}>
         <div className={styles.cardContainer}>
           <ProjectCards

@@ -1,3 +1,7 @@
+.pageTitle {
+  padding-left: 1rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -49,7 +53,7 @@
   font-family: inherit;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 550px) {
   .cardContainer {
     width: 100%;
     flex-direction: column;

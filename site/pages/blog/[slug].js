@@ -12,11 +12,25 @@ import ContentPage from "../../components/contentPage";
 
 export default function PostPage(props) {
   return (
-    <div>
-      <Link href="/blog">
-        <button>Go Back</button>
-      </Link>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignContent: "center",
+        }}
+      >
+        <div>
+          <Link href="/blog">
+            <button>Go Back</button>
+          </Link>
+        </div>
+
         <div
           style={{ maxWidth: "800px" }}
           dangerouslySetInnerHTML={{ __html: marked(props.content) }}
