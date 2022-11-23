@@ -11,13 +11,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 37rem;
+  max-width: 40rem;
   gap: 1rem;
 }
 
 .card {
-  width: 18rem;
-  height: 15rem;
+  width: 17rem;
+  height: 17rem;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -27,13 +27,14 @@
   justify-content: space-between;
   transition: transform 0.125s ease, opacity 0.125s ease-in-out;
   will-change: transform;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .card:hover {
   transform: scale3d(1.05, 1.05, 1.05);
   transition: transform 0.5s;
-  /* opacity: 0.5; */
+  opacity: 1;
+  /* z-index: -1; */
 }
 
 .header {
@@ -84,7 +85,7 @@
 }
 
 .footerLogo {
-  width: 70px;
+  width: 50px;
   position: relative;
 }
 

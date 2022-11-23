@@ -128,6 +128,29 @@ export default function Projects() {
             logo={["js"]}
             backgroundColor="#8499e7"
           />
+
+          <ProjectCards
+            name="Natours"
+            link="https://github.com/nightisyang/natours"
+            description={
+              <p>
+                Completed project part of{" "}
+                <a href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/">
+                  Node Bootcamp
+                </a>
+                .
+                <a href="https://thisyoung.rocks/natours" target="_blank">
+                  {" "}
+                  Natours
+                </a>{" "}
+                is a fullstack site created with SSR Pug Template, Node.js and
+                MongoDB. Topics covered include, JWT user authentication, REST
+                API and MVC architecture
+              </p>
+            }
+            logo={["js", "node", "mongo"]}
+            backgroundColor="#D18880"
+          />
         </div>
       </div>
     </>
