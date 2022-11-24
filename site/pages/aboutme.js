@@ -6,8 +6,21 @@ import Link from "next/link";
 
 export default function AboutMe() {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
-      <div style={{ maxWidth: "800px" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "800px",
+          backgroundColor: "#fffffb",
+          boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+          padding: "1rem",
+          borderRadius: "1rem",
+        }}
+      >
         <h1>About Me</h1>
         <div style={{ textAlign: "justify" }}>
           <p>Curious with some daredevil tendencies.</p>

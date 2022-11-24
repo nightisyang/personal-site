@@ -25,14 +25,20 @@ export default function PostPage(props) {
           alignContent: "center",
         }}
       >
-        <div>
+        <div style={{ padding: "0.5rem" }}>
           <Link href="/blog">
             <button>Go Back</button>
           </Link>
         </div>
 
         <div
-          style={{ maxWidth: "800px" }}
+          style={{
+            maxWidth: "800px",
+            backgroundColor: "#fffffb",
+            boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+            padding: "1rem",
+            borderRadius: "1rem",
+          }}
           dangerouslySetInnerHTML={{ __html: marked(props.content) }}
         ></div>
       </div>

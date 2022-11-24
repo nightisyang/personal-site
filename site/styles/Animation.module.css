@@ -1,6 +1,6 @@
 .csstext {
   display: grid;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   font-size: 2rem;
 }
 .item1 {
@@ -9,7 +9,7 @@
 }
 
 .cssyoung {
-  position: relative;
+  /* position: relative; */
   /* left: 58px; */
   animation-name: young;
   animation-duration: 3s;
