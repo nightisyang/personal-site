@@ -145,7 +145,7 @@ export default function Projects() {
                 </a>{" "}
                 is a fullstack site created with SSR Pug Template, Node.js and
                 MongoDB. Topics covered include, JWT user authentication, REST
-                API and MVC architecture
+                API and MVC architecture.
               </p>
             }
             logo={["js", "node", "mongo"]}
