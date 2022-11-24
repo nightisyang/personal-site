@@ -13,7 +13,7 @@ body {
   background-color: #e3e0d3;
   /* z-index: -1; */
 
-  overflow-y: overlay;
+  /* overflow-y: auto; */
 }
 
 /* a {
