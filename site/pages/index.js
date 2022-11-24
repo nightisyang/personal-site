@@ -5,15 +5,22 @@ import NounScript from "../components/nounScript";
 import Link from "next/link";
 import Sidebar from "../components/sidebar";
 import Banner from "./banner";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <>
       <Head>
         <title>this.you rocks!</title>
       </Head>
       <Sidebar />
-      <Banner />
+      {isLoaded && <Banner />}
 
       <div className={styles.container}>
         <main className={styles.main}>

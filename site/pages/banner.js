@@ -23,29 +23,27 @@ export default function Banner() {
     setBannerLogoStyle(styles.bannerLogo);
     setBannerH2Style(styles.bannerH2);
     setBannerPStyle(styles.bannerP);
-    setAnimation(true);
+    // setAnimation(true);
   });
 
   return (
     <>
-      {animation && (
-        <section className={styles.bannerContainer}>
-          <div className={styles.bannerInner}>
-            <div className={bannerH2Style}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
-                <Animation />
-              </div>
+      <section className={styles.bannerContainer}>
+        <div className={styles.bannerInner}>
+          <div className={bannerH2Style}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <Animation />
             </div>
-            <p className={bannerPStyle}>Sup nerds</p>
           </div>
-        </section>
-      )}
+          <p className={bannerPStyle}>Sup nerds</p>
+        </div>
+      </section>
     </>
   );
 }
