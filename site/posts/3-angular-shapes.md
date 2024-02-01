@@ -10,7 +10,7 @@ date: 30-12-2023
 
 That was the whole point of the career change. I wanted to prove to myself that I could do it. I wanted to prove that I could learn a new skill and apply it to a new career. I wanted to prove that I could be a software developer. Well, things turned out better than I hoped.
 
-Not only did I land a job early in the early, I could also say that I brought something to the table and was able to contribute to the team. I was even able to take on a leadership role after the person who hired me left, though I do miss being able to just focus on the code. Working in a fast pace environment was a challenge, having to meet deadlines and deliverables on time, but it was fun. Most importantly it was fun. The team that I am working with are great people and I am learning a lot from them.
+Not only did I land a job early in the year, I could also say that I brought something to the table and was able to contribute to the team. I was even able to take on a leadership role after the person who hired me left, though I do miss being able to just focus on the code. Working in a fast pace environment was a challenge, having to meet deadlines and deliverables on time, but it was fun. Most importantly it was fun. The team that I am working with are great people and I am learning a lot from them.
 
 ## something to learn
 

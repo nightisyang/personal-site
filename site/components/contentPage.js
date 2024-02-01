@@ -19,7 +19,7 @@ export default function ContentPage(props) {
       <div className={styles.body}>
         <div className={styles.content}>{props.content}</div>
       </div>
-      <div className={styles.footer}>Last Updated 17-11-2022</div>
+      <div className={styles.footer}>Last Updated 31-12-2023</div>
     </div>
   );
 }
